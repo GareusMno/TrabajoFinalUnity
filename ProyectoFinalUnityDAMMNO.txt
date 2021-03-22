@@ -1,0 +1,28 @@
+Unity game:
+Idea: Ladrón que se gana la vida robando
+Porque roba?
+- Deudas?
+- Apuestas?
+Objetivo final?
+- Pagar las deudas?
+- A partir de aquí poder seguir robando o fin del juego?
+Mapa estilo this war of mine? Van apareciendo casas/Robas por la noche, al entrar a una "habitacion" se revela
+Rango de la camara en rojo
+Necesitarias ganzuas, sigilo...
+Si te detectan las camaras tendrás X tiempo para irte o llegará la policia. (Perderas?)
+(Según la casa/propietario quizas va armado o tiene guardias?)
+Dudas: Que se hara con el dinero robado?
+Dudas: Que haras una vez vuelvas?
+Vender los objetos robados a cambio de dinero
+Inventario con los objetos robados.
+Casa: Radio en la que podras oír las noticias (Se escucharán cosas como que X zona está aumentado al seguridad)
+Posibles varios finales?
+- Ser atrapado
+- Pagar tu deuda?
+- Robar todo
+- etc
+Progresion
+Primeros robos? Vecindario? Esto afectara mentalmente?
+- Contactos, permitiran desbloquear casas especificas?
+- Mafia? Zonas mafiosas en las que robar en su zona te puede poner
+en su contra? o incluso ayudar si robas a sus rivales?
