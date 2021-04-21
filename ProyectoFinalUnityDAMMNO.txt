@@ -26,3 +26,62 @@ Primeros robos? Vecindario? Esto afectara mentalmente?
 - Contactos, permitiran desbloquear casas especificas?
 - Mafia? Zonas mafiosas en las que robar en su zona te puede poner
 en su contra? o incluso ayudar si robas a sus rivales?
+- Posible idea futura: Mercado negro donde tu vendes lo que robas y pones su precio.
+----------------
+Mecánicas antes del robo: 
+	Inspeccionar casa: Te permitirá ver un valor aproximado de lo que puedes
+	Conseguir si le robas todo.
+Mecanicas durante el robo: Esconderse, Agacharte, Dash rodando, ir en sigilo.
+Posibles extras: Ganchos? Ganzuas? Disfraz(pasa montañas)?Herramienta
+de pirateo de camaras? 
+Diferentes tipos de casas según la zona que según la zona se irán añadiendo
+elementos que compliquen el robo.
+
+Primer robo y tutorial:
+- Se hace perder al jugador y empieza el juego de verdad
+Casa de 5? habitaciones con 2o piso sin sotano.
+  Baño-Habitación
+Entrada-Salón-Cocina
+Puerta forzable, harás ruido y "despertaras" a los inquilinos, deberás
+esconderte, los inquilinos bajaran y a los 5 seg podrás seguir robando. 
+- Elementos interactuables robables:
+Entrada:
+	Mesilla con llaves(Llave para posible caja de la habitación), dinero suelto
+	Perchero con abrigos
+Salón: 
+	Armarios (Con platos y vasos, + dinero suelto) Television, Radio, Libros, Cuadros
+Cocina:
+	Armarios con cosas(Sartenes?, Aceites?)
+Baño: 
+	Tipico armario-botiquin: Medicinas
+	Armario: Elementos estéticos
+Habitación: 
+	Armario con ropa, Caja fuerte (dinero + posibles joyas?)
+Forzamos al jugador a intentar abrir la caja fuerte con la llave encontrada pero despierta
+Al inquilino y este ve su cara, el jugador huye y al dia siguiente vende lo robado en el mercado negro,
+pero el inquilino ha visto su cara, por lo que lo reporta
+A la policía y la policia lo encuentra en el mercado asi que es arrestado y empieza el juego de verdad.
+
+Pixel thief game its a simulator thief game where you hide and run to steal valuables items
+
+Porque robas? No ganas lo suficiente para sobrevivir
+Sistema con dias? Por el dia haces vida normal/te relacionas y por la noche robas?
+Dia especifico para el mercado negro?
+Sistema de relaciones?
+Zona inicial = barrio con tu casa y vecinos con los que relacionarte?
+Al salir por los lados aparecerá el mapa para elegir el lugar donde quieres ir. 
+Posibles eventos con la policia?
+Que se hace por el dia? Trabajo basura y relacionarte? Comprar?
+-----------------------------------------------------------------------
+Objetivo:
+- Completar todos los escenarios
+Ideas:
+- Ventana de cada escenario que te da info general y de lo que necesitarás para el
+Escenario (Ganzuas, chip de pirateo de camaras...), esta información quizás oculta al 
+principio e ir consiguiendola de alguna manera (Incluso conseguir el plano del escenario)
+- Recompensa en base a quan bien lo ha hecho? (Logro de 100% en todos los escenarios?)
+To-do:
+- Npcs policia con rango de vision visible con margen para ocultarte (Cuando se vuelve rojo te persigue un rato)
+- 3 Escenarios
+- 
+

@@ -1,0 +1,58 @@
+Pixel thief game:
+Its a roguelike game where you steal rare items to go further and steal more!
+Que tipo de niveles habra?
+- 3 Tipos de edificios
+- Tienda
+- Tienda especial
+- "Edificio final"
+Cada tipo de edificio con diferente pool de "artefactos" y diferentes
+Al principio de cada nivel tendrás para elegir entre 2-3 tipos de edificio para robar.
+Que robaras?
+ - Oro
+ - Consumibles?
+ - Objetos raros
+Que te impedira robarlo?
+ - Vigilantes
+ - Animales guardianes
+ - Puertas cerradas
+ - Puertas blindadas
+ - Camaras de seguridad
+Que haras con los objetos?
+ - Oro: Podrás gastarlo en la tienda por diferentes artefactos o consumibles
+ - Objetos raros: Te proporcionarán beneficios e incluso habilidades para facilitár
+ tus siguientes robos.
+Que harás en la tienda especial?
+ - Podrás vender tus artefactos
+ - Podrás cambiar tus artefactos por otros
+ - Artefactos especiales
+Como funcionara el nivel en los edificios?
+ - 5 a 8 salas
+ - 1 Sala con el artefacto
+ - Resto de salas sitios donde rebuscar oro/consumibles
+ - Diferente % de vigilantes según el tipo de edificio (20-30-40) (Quizás info antes de elegir?)
+ Formas de cada sala:
+  - Tetris
+Tipos de edificio:
+ - Edificio de la mafia
+ - Bancos
+ - Museos
+ - Joyeria
+ - Casa normal 
+Como pierdes?
+ - Te atrapa un vigilante
+Como ganas? 
+ - Robas el artefacto del edificio final
+
+TO-DO:
+- Jugador
+	- Sistema de movimiento del jugador
+	- Interacciones del jugador
+	- Sitios donde esconderse
+- 20 Objetos raros
+- Decorado 2D
+- Suelo y paredes 2D
+- Vigilantes
+- Camaras
+- Sistema de detección
+- Selección de niveles
+- 3 Variantes de niveles
