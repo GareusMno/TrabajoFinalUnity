@@ -12,6 +12,7 @@ public class fieldOfView : MonoBehaviour
     public List<Transform> visibleTargets = new List<Transform>();
     public float meshResolution;
     public MeshFilter viewMeshFilter;
+    public int Spot = 0;
     Mesh viewMesh;
     void Start() {
         viewMesh = new Mesh();
@@ -27,6 +28,18 @@ public class fieldOfView : MonoBehaviour
     }
     void Update() {
         DrawFieldOfView();
+        if(Spot==0){
+            transform.rotation = Quaternion.Euler(0,0,0);
+        }
+        if(Spot==1){
+            transform.rotation = Quaternion.Euler(0,0,270);
+        }
+        if(Spot==2){
+            transform.rotation = Quaternion.Euler(0,0,180);
+        }
+        if(Spot==3){
+            transform.rotation = Quaternion.Euler(0,0,90);
+        }
     }
     void FindVisibleTargets(){
         visibleTargets.Clear();
@@ -38,6 +51,9 @@ public class fieldOfView : MonoBehaviour
                 float dstToTarget = Vector3.Distance(transform.position,target.position);
                 if (!Physics2D.Raycast(transform.position,dirToTarget,dstToTarget,obstacleMask)){
                     visibleTargets.Add(target);
+                    gameObject.GetComponentInParent<PoliceMovement>().chase=true;
+                }else{
+                    gameObject.GetComponentInParent<PoliceMovement>().chase=false;
                 }
             }
         }

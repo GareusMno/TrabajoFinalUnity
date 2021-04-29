@@ -7,7 +7,7 @@ public class PoliceMovement : MonoBehaviour
     Rigidbody2D rb;
     bool walk = true;
     bool dir = true;
-    bool chase = false;
+    public bool chase = false;
     bool invertir = false;
     public float speed;
     private float waitTime;
@@ -18,6 +18,7 @@ public class PoliceMovement : MonoBehaviour
     
     [SerializeField]
     Transform player;
+    private Animator animPolice;
     float agroRange = 1;
     Vector2 origin = new Vector2(-6,1);
 
@@ -25,32 +26,46 @@ public class PoliceMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animPolice = GetComponent<Animator>();
         waitTime = startWaitTime;
     }
 
     // Update is called once per frame
     void Update()
     {  
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots[Spot].position, speed*Time.deltaTime);
-
-        if (Vector2.Distance(transform.position, moveSpots[Spot].position)< 0.2f){
-            if(waitTime <= 0){
-                if (!invertir){
-                    Spot += 1;
-                    waitTime = startWaitTime;
-                    if (Spot == moveSpots.Length-1){
-                        invertir = true;
+        if(chase==false){
+            transform.position = Vector2.MoveTowards(transform.position, moveSpots[Spot].position, speed*Time.deltaTime);
+            if (Vector2.Distance(transform.position, moveSpots[Spot].position)< 0.2f){
+                if(waitTime <= 0){
+                    if (Spot<3){
+                        Spot += 1;
+                        waitTime = startWaitTime;
+                    }else{
+                        Spot = 0;
+                        waitTime = startWaitTime;
                     }
+                    gameObject.GetComponentInChildren<fieldOfView>().Spot=Spot;
+                    /*
+                    if (!invertir){
+                        Spot += 1;
+                        waitTime = startWaitTime;
+                        if (Spot == moveSpots.Length-1){
+                            invertir = true;
+                        }
+                    }else{
+                        Spot -= 1;
+                        waitTime = startWaitTime;
+                        if (Spot == 0){
+                            invertir = false;
+                        }
+                    }
+                    */
                 }else{
-                    Spot -= 1;
-                    waitTime = startWaitTime;
-                    if (Spot == 0){
-                        invertir = false;
-                    }
+                    waitTime -= Time.deltaTime;
                 }
-            }else{
-                waitTime -= Time.deltaTime;
             }
+        }else{
+            chasePlayer();
         }
         /*
         float distToPlayer = Vector2.Distance(transform.position,player.position);
@@ -95,9 +110,7 @@ public class PoliceMovement : MonoBehaviour
         walk = true;
     }
     private void chasePlayer(){
-        chase = true;
-        walk = false;
-        transform.position = Vector2.MoveTowards(transform.position,player.position,1 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position,player.position,1 * Time.deltaTime);
     }
     private void comeback(){
         transform.position = Vector2.MoveTowards(transform.position,origin,1 * Time.deltaTime);
