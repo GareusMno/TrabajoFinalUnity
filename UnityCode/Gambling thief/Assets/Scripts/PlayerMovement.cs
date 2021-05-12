@@ -16,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (playerScript.inputScript.isRightPressed || playerScript.inputScript.isLeftPressed || playerScript.inputScript.isUpPressed || playerScript.inputScript.isDownPressed){
+            if(playerScript.inputScript.isLeftPressed){
+                gameObject.GetComponentInChildren<SpriteRenderer>().flipX=true;
+            }else{
+                gameObject.GetComponentInChildren<SpriteRenderer>().flipX=false;
+            }
             MovePlayer();
         } else{
             StopMovement();
@@ -25,13 +30,14 @@ public class PlayerMovement : MonoBehaviour
         float mx = Input.GetAxisRaw("Horizontal");
         float my = Input.GetAxisRaw("Vertical");
         Vector2 movement = new Vector2(mx,my).normalized;
-        playerScript.rb.velocity = movement * playerScript.speed;
-        playerScript.animator.SetFloat("Horizontal",mx);
-        playerScript.animator.SetFloat("Vertical",my);
-        playerScript.animator.SetBool("Caminar",true);
+        playerScript.rb.velocity = movement * playerScript.speed * Time.deltaTime;
+        playerScript.animator.SetFloat("mx",mx);
+        playerScript.animator.SetFloat("my",my);
+        playerScript.animator.SetBool("Movement",true);
     }
     private void StopMovement(){
+        gameObject.GetComponentInChildren<SpriteRenderer>().flipX=false;
         playerScript.rb.velocity = new Vector2(0,0);
-        playerScript.animator.SetBool("Caminar",false);
+        playerScript.animator.SetBool("Movement",false);
     }
 }

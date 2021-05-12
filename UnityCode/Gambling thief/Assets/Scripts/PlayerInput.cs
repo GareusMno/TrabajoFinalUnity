@@ -11,6 +11,7 @@ public class PlayerInput : MonoBehaviour
     internal bool isRightPressed;
     internal bool isUpPressed;
     internal bool isDownPressed;
+    internal bool isEscapePressed;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,9 @@ public class PlayerInput : MonoBehaviour
             isRightPressed = true;
         }else{
             isRightPressed = false;
+        }
+        if(Input.GetKey(KeyCode.Escape)){
+            playerScript.Pausar();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,19 +18,13 @@ public class PlayerController : MonoBehaviour
     public bool interactuar = false;
     internal Animator animator;
     internal string currentState;
+    public bool pausa;
+    public GameObject pauseMenuUI;
     // Start is called before the first frame update
     private void Awake(){
         print("Main PlayerScript awakening");
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-    }
-    void Start(){
-        if (Instance != null){
-            Destroy(this.gameObject);
-            return;
-        }
-        Instance = this;
-        GameObject.DontDestroyOnLoad(this.gameObject);
     }
     // Update is called once per frame
     internal void ChangeState(string newState){
@@ -45,4 +40,27 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         interactuar=false;
     }
+    public void Pausar(){
+        if(pausa){
+            Volver();
+        }else{
+            Pause();
+        }
+    }
+    public void Pause(){
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        pausa = true;
+    }
+    public void Volver(){
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        pausa = false;
+    }
+    public void SalirALaSeleccion(){
+        Time.timeScale = 1f;
+        pausa = false;
+        SceneManager.LoadScene(1);
+    }
+    
 }
