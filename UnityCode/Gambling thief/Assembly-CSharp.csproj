@@ -42,12 +42,14 @@
      <Compile Include="Assets\Scripts\Inventario.cs" />
      <Compile Include="Assets\Scripts\Llaves.cs" />
      <Compile Include="Assets\Scripts\Mesilla.cs" />
+     <Compile Include="Assets\Scripts\MusicaEntreEscenas.cs" />
      <Compile Include="Assets\Scripts\NextLevel.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerInput.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Puerta.cs" />
+     <Compile Include="Assets\Scripts\PuzzleFuegosNivel2.cs" />
      <Compile Include="Assets\Scripts\PuzzleFuegosNvl3.cs" />
      <Compile Include="Assets\Scripts\SorterSpries.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
