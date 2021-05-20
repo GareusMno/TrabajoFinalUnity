@@ -11,6 +11,8 @@ TagManager:
   - Ground
   - Puerta
   - Secreto
+  - Piedra 1u
+  - Piedra 2u
   layers:
   - Default
   - TransparentFX
