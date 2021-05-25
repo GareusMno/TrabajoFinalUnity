@@ -13,6 +13,8 @@ TagManager:
   - Secreto
   - Piedra 1u
   - Piedra 2u
+  - NextLevel
+  - Piedra
   layers:
   - Default
   - TransparentFX

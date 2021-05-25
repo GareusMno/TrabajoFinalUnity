@@ -41,7 +41,7 @@ public class PlayerInput : MonoBehaviour
         }else{
             isRightPressed = false;
         }
-        if(Input.GetKey(KeyCode.Escape)){
+        if(Input.GetKeyDown(KeyCode.Escape)){
             playerScript.Pausar();
         }
     }
