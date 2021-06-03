@@ -6,6 +6,8 @@ public class MusicaEntreEscenas : MonoBehaviour
 {
     // Start is called before the first frame update
     private MusicaEntreEscenas instance;
+    public AudioClip[] musica;
+    public AudioSource audioSource;
     public MusicaEntreEscenas Instance{
         get{
             return instance;
@@ -23,12 +25,15 @@ public class MusicaEntreEscenas : MonoBehaviour
     }
     void Start()
     {
-        
+        audioSource.loop = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(!audioSource.isPlaying){
+            audioSource.clip = musica[Random.Range(0,musica.Length)];
+            audioSource.Play();
+        }
     }
 }

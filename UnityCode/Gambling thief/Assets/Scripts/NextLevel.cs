@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     // Start is called before the first frame update
-    
     public int nextSceneLoad;
+    public int levelIndex;
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -15,11 +15,14 @@ public class NextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "NextLevel"){
-            Debug.Log("Next level");
+            PlayerPrefs.SetInt("Lv"+levelIndex,1);
             if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount){
                 Debug.Log("Se acabo");
                 Application.Quit();
             }else{
+                
+                Debug.Log(SceneManager.GetActiveScene().buildIndex);
+                Debug.Log(SceneManager.sceneCount);
                 SceneManager.LoadScene(nextSceneLoad);
                 if (nextSceneLoad > PlayerPrefs.GetInt("levelAt")){
                     PlayerPrefs.SetInt("levelAt", nextSceneLoad);

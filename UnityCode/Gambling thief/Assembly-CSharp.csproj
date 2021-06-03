@@ -36,10 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\ScriptControladorPuzzlePiedras2.cs" />
      <Compile Include="Assets\Scripts\BotonNiveles.cs" />
      <Compile Include="Assets\Scripts\Camara.cs" />
+     <Compile Include="Assets\Scripts\FireNvl7.cs" />
      <Compile Include="Assets\Scripts\Interactive.cs" />
      <Compile Include="Assets\Scripts\Inventario.cs" />
+     <Compile Include="Assets\Scripts\LevelSelection.cs" />
      <Compile Include="Assets\Scripts\Llaves.cs" />
      <Compile Include="Assets\Scripts\Mesilla.cs" />
      <Compile Include="Assets\Scripts\MusicaEntreEscenas.cs" />
@@ -54,6 +57,8 @@
      <Compile Include="Assets\Scripts\PuzzleFuegosNvl3.cs" />
      <Compile Include="Assets\Scripts\PuzzleNivelFuegoPuertas.cs" />
      <Compile Include="Assets\Scripts\ScriptPuzzleNivel5.cs" />
+     <Compile Include="Assets\Scripts\Secreto.cs" />
+     <Compile Include="Assets\Scripts\SonidoClick.cs" />
      <Compile Include="Assets\Scripts\SorterSpries.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

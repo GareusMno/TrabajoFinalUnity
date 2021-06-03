@@ -1,0 +1,44 @@
+Nivel 1 Tutorial:
+Seguir hacia delante.
+Nivel 2 Tutorial llaves: 
+Seguir hacia delante.
+Nivel 3 Tutorial fuegos:
+Encender todos los fuegos.
+Nivel 4 Fuegos 1:
+Encender los fuegos en los ordenes indicados en el centro para pasar de nivel, para conseguir el secreto
+seguir el orden de la sala derecha.
+Nivel 5 Fuegos 2:
+Encender los fuegos indicados para pasar de nivel, para conseguir el secreto hacerlo a la inversa.
+Nivel 6 Fuegos 3:
+Para pasar de nivel encender los fuegos indicados a la izquierda en el orden de la imagen:
+1: Fuego  2
+2: Fuego 4
+3: Fuego 13
+4: Fuego 15
+5: Fuego 11
+6: Fuego 3
+7: Fuego 8
+Para el secreto encender los fuegos en este orden:
+Resolucion 1:
+1: Fuego 7
+2: Fuego 9
+3: Fuego 8
+4: Fuego 7
+5: Fuego 9
+6: Fuego 6
+7: Fuego 10
+8: Fuego 7
+9: Fuego 8
+10: Fuego 6
+11: Fuego 10
+Resolucion 2:
+1: Fuego 1
+2: Fuego 5
+3: Fuego 8
+4: Fuego 11
+5: Fuego 15
+6: Fuego 6
+7: Fuego 10
+Nivel 7 Cajas 1:
+Para pasar de nivel: Poner las cajas en los sitios indicados
+Para conseguir el secreto y pasar de nivel: Poner las cajas en el sitio con el color indicado.
