@@ -8,6 +8,7 @@ public class NextLevel : MonoBehaviour
     // Start is called before the first frame update
     public int nextSceneLoad;
     public int levelIndex;
+    public GameObject Fin;
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -16,13 +17,11 @@ public class NextLevel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "NextLevel"){
             PlayerPrefs.SetInt("Lv"+levelIndex,1);
-            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount){
+            if (SceneManager.GetActiveScene().buildIndex == 9){
                 Debug.Log("Se acabo");
-                Application.Quit();
+                Time.timeScale = 0f;
+                Fin.SetActive(true);
             }else{
-                
-                Debug.Log(SceneManager.GetActiveScene().buildIndex);
-                Debug.Log(SceneManager.sceneCount);
                 SceneManager.LoadScene(nextSceneLoad);
                 if (nextSceneLoad > PlayerPrefs.GetInt("levelAt")){
                     PlayerPrefs.SetInt("levelAt", nextSceneLoad);
@@ -38,6 +37,7 @@ public class NextLevel : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     public void GoToSelectLevel(){
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
     public void ReiniciarNivel(){
