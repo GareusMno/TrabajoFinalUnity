@@ -47,4 +47,7 @@ public class NextLevel : MonoBehaviour
     public void Quit(){
         Application.Quit();
     }
+    public void ReiniciarAvance(){
+        PlayerPrefs.DeleteAll();
+    }
 }

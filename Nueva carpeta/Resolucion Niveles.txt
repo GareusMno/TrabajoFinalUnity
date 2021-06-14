@@ -23,14 +23,6 @@ Resolucion 1:
 1: Fuego 7
 2: Fuego 9
 3: Fuego 8
-4: Fuego 7
-5: Fuego 9
-6: Fuego 6
-7: Fuego 10
-8: Fuego 7
-9: Fuego 8
-10: Fuego 6
-11: Fuego 10
 Resolucion 2:
 1: Fuego 1
 2: Fuego 5

@@ -12,10 +12,16 @@ public class Secreto : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         altavoz.Play();
+        Debug.Log("Secreto desbloqueado");
+        StartCoroutine(wait());
+    }
+    void Die(){
+		
+	}
+    public IEnumerator wait(){
+        gameObject.GetComponent<SpriteRenderer>().enabled=false;
+        yield return new WaitForSeconds(2.0f);
         gameObject.SetActive(false);
         PlayerPrefs.SetInt("Secret"+levelIndex,1);
-        PlayerPrefs.SetInt("Lv"+levelIndex,1);
-
-        Debug.Log("Secreto desbloqueado");
     }
 }

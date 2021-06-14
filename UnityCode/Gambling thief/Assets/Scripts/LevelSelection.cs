@@ -41,6 +41,8 @@ public class LevelSelection : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("Lv" + previousLevelNum));
         if(PlayerPrefs.GetInt("Lv" + previousLevelNum) > 0){
             unlocked = true;
+        }else{
+            unlocked = false;
         }
     }
 }
